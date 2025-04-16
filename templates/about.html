@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+<div class="container my-5">
+    <h2 class="text-center mb-4">About Todoer</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+  
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Organize with Ease</h5>
+            <p class="card-text">Todoer helps you manage your tasks effortlessly. Add, update, and delete to-dos with a clean and simple interface designed to keep you productive.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Stay on Track</h5>
+            <p class="card-text">Track your tasks with creation dates and organized lists. Whether it’s daily chores or long-term goals, Todoer keeps everything in one place.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Minimal & Fast</h5>
+            <p class="card-text">Built with Flask and Bootstrap, Todoer is lightweight and lightning fast. Enjoy a smooth and distraction-free experience across all devices.</p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    <div class="text-center mt-3">
+        <a href="./"><button class="btn btn-outline-dark">Go Back</button></a>
+      </div>
+  </div>
+  
+  {% endblock content %}

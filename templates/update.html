@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+<div class="div container mt-5">
+    <form action="/update/{{todo.id}}", method="POST">
+      <div class="form-group">
+        <label for="title">Update Your Task</label>
+        <input
+          name="title"
+          value="{{todo.task}}"
+          type="text"
+          class="form-control"
+          id="title"
+          placeholder="Enter Task Name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="desc">Change Description</label>
+        <input
+          name="desc"
+          value="{{todo.desc}}"
+          type="text"
+          class="form-control"
+          id="desc"
+          placeholder="What you want to be done?"
+        />
+      </div>
+      <div class="form-check my-2">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1"
+          >Label as Important</label
+        >
+      </div>
+      <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+  </div>
+
+  {% endblock content %}
