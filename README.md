@@ -68,9 +68,3 @@ todoer/
 ## License
 
 This project is licensed under the MIT License.
-
-## Contact
-
-Your Name - email@example.com
-
-Project Link: https://github.com/yourusername/todoer
